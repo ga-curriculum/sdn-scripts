@@ -1,26 +1,21 @@
 <!-- ! Do not delete or rename this file! -->
 <h1>
   <span class="prefix"></span>
-  <span class="headline">[tktk Headline]</span>
+  <span class="headline">SDN Scripts</span>
 </h1>
 
-tktk Add some default course navigation content here. This landing page will be used when a student's course cannot be determined, so don't include any course-specific details.
+## About
+
+By the end of this module, you'll be able to create and configure cloud-based software-defined networks in Google Cloud Platform using Terraform, understanding the fundamental components and how they work together.
 
 ## Content
 
 | Lesson | Est. Delivery Time | Skills |
 | ------ |:------------------:| ------ |
-| [Setup](../setup/README.md)                          | -- | Set up the development environment. |
-| [Concepts](../concepts/README.md)                    | -- | tktk Skills covered.                |
-| [tktk Microlesson Name](../microlesson-01/README.md) | -- | tktk Skills covered.                |
-| **Total content**                                    | -- |                                     |
-
-## Level Up content
-
-| Lesson | Est. Delivery Time | Skills |
-| ------ |:------------------:| ------ |
-| [tktk Microlesson Name](../microlesson-02/README.md) | -- | tktk Skills covered. |
-| **Total Level Up content**                           | -- |                      |
+| [Understanding SDN in Google Cloud](../sdn-in-google-cloud/README.md)                          | 10 min | Learn how SDN works in GCP. |
+| [Building a VPC Network with Terraform](../building-a-vpc/README.md)                    | 10 min | Create a complete VPC network with public and private subnets using Terraform for GCP.               |
+| [Advanced Network Features in GCP](../advanced-network-features/README.md) | -- | Build more complex network designs.               |
+| **Total content**                                   | 30 min |                                     |
 
 ## References
 
