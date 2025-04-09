@@ -1,0 +1,13 @@
+{
+  "name": "tktk-module-name",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "mdv": "node md-validate.js"
+  },
+  "type": "module",
+  "author": "General Assembly",
+  "dependencies": {
+    "ga-mdlint": "^1.0.5"
+  }
+}
