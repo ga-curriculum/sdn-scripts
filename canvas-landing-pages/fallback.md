@@ -19,4 +19,4 @@ In this module we'll create and configure cloud-based software-defined networks 
 
 ## References
 
-📖 [Reference Materials](./references/README.md)
+📖 [Reference Materials](../references/README.md)

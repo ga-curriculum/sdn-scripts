@@ -18,4 +18,4 @@ By the end of this module, you'll be able to create and configure cloud-based so
 
 ## References
 
-📖 [Reference Materials](./references/README.md)
+📖 [Reference Materials](../references/README.md)
