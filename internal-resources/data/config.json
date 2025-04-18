@@ -21,7 +21,7 @@
       "microlessons": [
         {
           "friendlyName": "Understanding SDN in Google Cloud",
-          "dirName": "sdn-in-google-cloud",
+          "dirName": "understanding-sdn-in-google-cloud",
           "type": "Content",
           "skill": "",
           "learningObjective": "",
@@ -31,7 +31,7 @@
         },
         {
           "friendlyName": "Building a VPC Network with Terraform",
-          "dirName": "building-a-vpc",
+          "dirName": "building-a-vpc-network-with-terraform",
           "type": "Content",
           "skill": "",
           "learningObjective": "",
@@ -41,7 +41,7 @@
         },
         {
           "friendlyName": "Advanced Network Features in GCP",
-          "dirName": "advanced-network-features",
+          "dirName": "advanced-network-features-in-gcp",
           "type": "Content",
           "skill": "",
           "learningObjective": "",
@@ -80,7 +80,7 @@
       "microlessons": [
         {
           "friendlyName": "Understanding SDN in Google Cloud",
-          "dirName": "sdn-in-google-cloud",
+          "dirName": "understanding-sdn-in-google-cloud",
           "type": "Content",
           "skill": "",
           "learningObjective": "",
@@ -90,7 +90,7 @@
         },
         {
           "friendlyName": "Building a VPC Network with Terraform",
-          "dirName": "building-a-vpc",
+          "dirName": "building-a-vpc-network-with-terraform",
           "type": "Content",
           "skill": "",
           "learningObjective": "",
@@ -100,7 +100,7 @@
         },
         {
           "friendlyName": "Advanced Network Features in GCP",
-          "dirName": "advanced-network-features",
+          "dirName": "advanced-network-features-in-gcp",
           "type": "Content",
           "skill": "",
           "learningObjective": "",

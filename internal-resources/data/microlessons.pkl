@@ -4,21 +4,21 @@ import "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/univer
 
 understandingSdnInGoogleCloud = new Template.Microlesson {
   friendlyName = "Understanding SDN in Google Cloud"
-  dirName = "sdn-in-google-cloud"
+  dirName = "understanding-sdn-in-google-cloud"
   type = "Content"
   videoUrl = ""
 }
 
-buildingAVpc = new Template.Microlesson {
+buildingAVpcNetworkWithTerraform = new Template.Microlesson {
   friendlyName = "Building a VPC Network with Terraform"
-  dirName = "building-a-vpc"
+  dirName = "building-a-vpc-network-with-terraform"
   type = "Content"
   videoUrl = ""
 }
 
-advancedNetworkFeatures = new Template.Microlesson {
+advancedNetworkFeaturesInGcp = new Template.Microlesson {
   friendlyName = "Advanced Network Features in GCP"
-  dirName = "advanced-network-features"
+  dirName = "advanced-network-features-in-gcp"
   type = "Content"
   videoUrl = ""
 }

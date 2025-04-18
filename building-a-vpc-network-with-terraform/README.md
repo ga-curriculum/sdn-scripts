@@ -5,11 +5,11 @@
 
 **Learning objective:** By the end of this lesson, students will be able to create a complete VPC network with public and private subnets using Terraform for GCP.
 
-## Setting Up Your Terraform Configuration
+## Setting up your Terraform configuration
 
 Let's start by setting up the basic structure of our Terraform project:
 
-``` hcl
+```hcl
 # provider.tf - Configure the Google provider
 provider "google" {
   project = "your-project-id"
@@ -36,7 +36,7 @@ variable "region" {
 
 Now, let's create a custom-mode VPC network:
 
-``` hcl
+```hcl
 # network.tf - Define VPC and subnets
 resource "google_compute_network" "vpc" {
   name                    = "terraform-network"
@@ -67,7 +67,8 @@ resource "google_compute_subnetwork" "private_subnet" {
   region        = var.region
   network       = google_compute_network.vpc.id
   
-  # Enable private Google access (allows VMs to reach Google APIs without public IP)
+  # Enable private Google access (allows VMs to reach Google APIs without 
+  # a public IP)
   private_ip_google_access = true
   
   log_config {
@@ -78,13 +79,13 @@ resource "google_compute_subnetwork" "private_subnet" {
 }
 ```
 
-**Pro Tip:** By setting `auto_create_subnetworks = false`, we're using "custom mode" VPC, which gives us complete control over subnet creation rather than having GCP automatically create subnets in each region.
+> 🧠 By setting `auto_create_subnetworks = false`, we're using "custom mode" VPC, which gives us complete control over subnet creation rather than having GCP automatically create subnets in each region.
 
-## Setting Up Cloud NAT for Private Instances
+## Setting up cloud NAT for private instances
 
 Instances in the private subnet won't have public IPs, so we need to set up Cloud NAT to allow them to access the internet:
 
-``` hcl
+```hcl
 # nat.tf - Configure Cloud NAT for private instances
 # First, create a Cloud Router
 resource "google_compute_router" "router" {
@@ -113,9 +114,9 @@ resource "google_compute_router_nat" "nat" {
 }
 ```
 
-## Configuring Firewall Rules
+## Configuring firewall rules
 
-``` hcl
+```hcl
 # firewall.tf - Define firewall rules
 # Allow SSH access to public instances
 resource "google_compute_firewall" "allow_ssh_public" {
@@ -173,9 +174,9 @@ resource "google_compute_firewall" "allow_web" {
 
 **Security Note:** In GCP, the default firewall rule is to deny all incoming traffic. You need to explicitly create rules to allow traffic.
 
-## Creating Compute Instances to Test Our Network
+## Creating compute instances to test our network
 
-``` hcl
+```hcl
 # instances.tf - Create sample VMs
 # Public VM with external IP
 resource "google_compute_instance" "public_vm" {
@@ -223,11 +224,11 @@ resource "google_compute_instance" "private_vm" {
 }
 ```
 
-## Outputs for Important Information
+## Outputs for important information
 
 Finally, let's define some outputs to make it easier to reference important values:
 
-``` hcl
+```hcl
 # outputs.tf - Define output values
 output "vpc_name" {
   description = "The name of the VPC"

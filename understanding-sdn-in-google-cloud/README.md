@@ -5,7 +5,7 @@
 
 **Learning Objective:** Understand the key components of Google Cloud networking and how they differ from traditional physical networks.
 
-## What is Software-Defined Networking?
+## What is software-defined networking?
 
 Remember physical networking? The days of untangling cables, labeling switch ports, and trying to figure out which blinking light corresponds to which connection? Software-Defined Networking (SDN) changes all that by replacing physical components with virtual, programmable ones.
 
@@ -18,7 +18,7 @@ The real power comes when we use Terraform to manage these network resources. In
 - Testable (validate before deploying)
 - Automated (no manual steps)
 
-## Key GCP Networking Components
+## Key GCP networking components
 
 Here's how traditional networking concepts translate to GCP resources that we'll manage with Terraform:
 
@@ -31,7 +31,7 @@ Here's how traditional networking concepts translate to GCP resources that we'll
 | Load Balancer           | Various LB Types | `google_compute_global_forwarding_rule` |
 | NAT                     | Cloud NAT        | `google_compute_router_nat`             |
 
-## Special Characteristics of GCP Networking
+## Special characteristics of GCP networking
 
 Unlike physical networks or even some other cloud providers, GCP has some unique characteristics:
 
@@ -43,6 +43,5 @@ Unlike physical networks or even some other cloud providers, GCP has some unique
 ## A Simple Network Architecture
 
 Here's what we'll build in the following lessons:
-
 
 **tktk - DAVID TO CREATE DIAGRAM**

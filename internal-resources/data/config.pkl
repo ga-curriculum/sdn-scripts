@@ -25,8 +25,8 @@ courses {
     microlessons {
       // Add microlessons here, in the order they should be delivered
       mls.understandingSdnInGoogleCloud
-      mls.buildingAVpc
-      mls.advancedNetworkFeatures
+      mls.buildingAVpcNetworkWithTerraform
+      mls.advancedNetworkFeaturesInGcp
     }
   }
     new {
@@ -34,8 +34,8 @@ courses {
     microlessons {
       // Add microlessons here, in the order they should be delivered
       mls.understandingSdnInGoogleCloud
-      mls.buildingAVpc
-      mls.advancedNetworkFeatures
+      mls.buildingAVpcNetworkWithTerraform
+      mls.advancedNetworkFeaturesInGcp
     }
   }
 }

@@ -5,9 +5,9 @@
 
 **Learning objective:** By the end of this lesson, students will be able to configure additional GCP networking features including custom routes, VPC peering, and load balancers to build more complex network designs.
 
-## VPC Peering: Connecting Networks Together
+## VPC peering: Connecting networks together
 
-``` hcl
+```hcl
 # Create a second VPC for demonstration
 resource "google_compute_network" "vpc_2" {
   name                    = "second-vpc"
@@ -41,13 +41,13 @@ resource "google_compute_network_peering" "peering2" {
 }
 ```
 
-**Pro Tip:** VPC peering is non-transitive, meaning if VPC A is peered with VPC B, and VPC B is peered with VPC C, VPC A cannot communicate with VPC C through the peering connections.
+> 🧠 VPC peering is non-transitive, meaning if VPC A is peered with VPC B, and VPC B is peered with VPC C, VPC A cannot communicate with VPC C through the peering connections.
 
-## Creating Custom Routes
+## Creating custom routes
 
 You can define custom routes to control how traffic flows within your network:
 
-``` hcl
+```hcl
 # Create a custom route
 resource "google_compute_route" "custom_route" {
   name             = "custom-route"
@@ -72,7 +72,7 @@ resource "google_compute_route" "appliance_route" {
 
 Let's set up a global HTTP load balancer to distribute traffic to your application:
 
-``` hcl
+```hcl
 # Create a health check
 resource "google_compute_health_check" "default" {
   name               = "http-health-check"
@@ -129,11 +129,11 @@ resource "google_compute_global_forwarding_rule" "default" {
 }
 ```
 
-## Shared VPC: For Multi-Project Setups
+## Shared VPC: For multi-project setups
 
 For larger organizations, Shared VPC lets you share a VPC network across multiple projects:
 
-``` hcl
+```hcl
 # You'd typically have a host project
 resource "google_compute_shared_vpc_host_project" "host" {
   project = var.host_project_id
@@ -148,11 +148,11 @@ resource "google_compute_shared_vpc_service_project" "service1" {
 
 **Pro Tip:** Shared VPC is ideal for larger organizations where you want central IT to control networking, but allow individual teams to manage their own resources.
 
-## Private Service Access
+## Private service access
 
 Connect privately to Google-managed services like Cloud SQL:
 
-``` hcl
+```hcl
 # Allocate an IP range for private service access
 resource "google_compute_global_address" "private_ip_range" {
   name          = "private-service-access"
@@ -188,16 +188,16 @@ resource "google_sql_database_instance" "main" {
 }
 ```
 
-## Summary and Key Concepts
+## Summary and key concepts
 
 We've covered the essentials of Software-Defined Networking in Google Cloud:
 
-1. **VPC Networks** are global and span all regions
+1. **VPC networks** are global and span all regions
 2. **Subnets** are regional resources within your VPC
-3. **Firewall Rules** control traffic flow between resources
+3. **Firewall rules** control traffic flow between resources
 4. **Cloud NAT** provides outbound internet access for private instances
-5. **VPC Peering** connects separate VPC networks
-6. **Load Balancers** distribute traffic to your applications
+5. **VPC peering** connects separate VPC networks
+6. **Load balancers** distribute traffic to your applications
 7. **Shared VPC** centralizes network management for multiple projects
 
 The power of using Terraform is that you can:

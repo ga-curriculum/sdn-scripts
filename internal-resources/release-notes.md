@@ -3,9 +3,9 @@
   <span class="subhead">Release Notes</span>
 </h1>
 
-## Version 1.0 - Updates from legacy content
+## Version 1.0 - New
 
-This release modularizes the legacy [tktk previous lecture name] lecture and provides some other minor updates detailed below. Updates are provided here at the module level, but all subsequent updates should be documented at the lesson level.
+This is a new module in our content library.
 
 ### Release details
 

@@ -1,0 +1,42 @@
+{
+  "name": "highlight-hcl",
+  "version": "1.0.0",
+  "description": "A highlight.js plugin for hashicorp configuration language",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "test": "vitest",
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yilanboy/highlight-hcl.git"
+  },
+  "keywords": [
+    "highlight.js",
+    "highlightjs",
+    "syntax",
+    "highlight",
+    "terraform",
+    "packer",
+    "hcl"
+  ],
+  "author": "yilanboy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yilanboy/highlight-hcl/issues"
+  },
+  "homepage": "https://github.com/yilanboy/highlight-hcl#readme",
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "highlight.js": "^11.11.1"
+  }
+}
