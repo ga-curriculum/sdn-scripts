@@ -3,7 +3,7 @@
   <span class="subhead">Understanding SDN in Google Cloud</span>
 </h1>
 
-**Learning Objective:** Understand the key components of Google Cloud networking and how they differ from traditional physical networks.
+**Learning Objective:** By the end of this lesson, students will be able to describe the key components of Google Cloud networking and how they differ from traditional physical networks.
 
 ## What is software-defined networking?
 
@@ -39,9 +39,3 @@ Unlike physical networks or even some other cloud providers, GCP has some unique
 2. **Regional Subnets:** Subnets are regional resources within your global VPC
 3. **Automatic Mode vs. Custom Mode:** VPCs can automatically create subnets in each region (automatic) or let you define them manually (custom)
 4. **Firewall Rules:** Deny by default, with explicit allow rules
-
-## A Simple Network Architecture
-
-Here's what we'll build in the following lessons:
-
-**tktk - DAVID TO CREATE DIAGRAM**
