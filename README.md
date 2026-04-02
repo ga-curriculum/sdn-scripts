@@ -28,8 +28,8 @@ In this module we'll create and configure cloud-based software-defined networks 
 
 ### Course landing pages
 
-- [ITB - IT Bootcamp](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/sdn-scripts/canvas-landing-pages/itb.html)
-- [Fallback](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/sdn-scripts/canvas-landing-pages/fallback.html)
+- [ITB - IT Bootcamp](https://ga-curriculum.github.io/sdn-scripts/canvas-landing-pages/itb.html)
+- [Fallback](https://ga-curriculum.github.io/sdn-scripts/canvas-landing-pages/fallback.html)
 
 ### Resources
 
@@ -41,4 +41,4 @@ In this module we'll create and configure cloud-based software-defined networks 
 
 ---
 
-**Find a 👾 bug 👾 or have suggestions? [Let us know](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/module-feedback.html)!**
+**Find a 👾 bug 👾 or have suggestions? [Let us know](https://ga-curriculum.github.io/universal-resources-internal/module-feedback.html)!**
